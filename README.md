@@ -10,6 +10,9 @@ This is a personal project for Epicodus. The goal for this week is to discover a
 2. Build a form to add Angular JS vocabulary (include name, description)
 3. Add buttons to edit and remove items from vocabulary list
 
+Resources:
+https://tutorialzine.com/2013/08/learn-angularjs-5-examples
+
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
