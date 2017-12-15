@@ -4,10 +4,20 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { VocabularyComponent } from './vocabulary/vocabulary.component';
+import { EditVocabularyComponent } from './edit-vocabulary/edit-vocabulary.component';
+import { VocabularyDetailComponent } from './vocabulary-detail/vocabulary-detail.component';
+import { ResourcesComponent } from './resources/resources.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WelcomeComponent,
+    VocabularyComponent,
+    EditVocabularyComponent,
+    VocabularyDetailComponent,
+    ResourcesComponent
   ],
   imports: [
     BrowserModule,
