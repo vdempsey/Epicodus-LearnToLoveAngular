@@ -1,1 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  /* background-color: #f2f2f2; */
+  color: #404040;
+}
+
+.header {
+  width: 100%;
+  /* background-color: grey; */
+  padding-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 100px;
+}
+
+ul.navigation {
+  width: 600px;
+  list-style: none;
+  display: flex;
+  align-content: center;
+  -webkit-padding-start: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  margin: 0;
+}
+
+.navigation li, .navigation li a {
+  color: white;
+  background-color: #404040;
+  margin: 10px;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.container, .container-wrap {
+  margin: 0 10%;
+}
+
+
+.container {
+  height: calc(100% - 180px);
+  background-color: #fff;
+  padding: 20px;
+}
+
+.container h1 {
+  padding-top: 20px;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+.footer {
+  height: 80px;
+}
