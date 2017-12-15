@@ -1,4 +1,9 @@
-# EpicodusLearnToLoveAngular
+# Epicodus Learn To Love Angular
+by Valia Dempsey
+12.05.2017
+
+## Description
+This is a personal project for Epicodus. The goal for this week is to discover and improve understanding of a challenging subject of past material. In my case it's Angular JS. I want to create an app that will have a few tasks that can be addressed using Angular JS.    
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
