@@ -1,0 +1,17 @@
+{
+  "name": "epicodus-learn-to-love-angular",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Valia Dempsey <valentinaml@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
