@@ -3,12 +3,18 @@ by Valia Dempsey
 12.05.2017
 
 ## Description
-This is a personal project for Epicodus. The goal for this week is to discover and improve understanding of a challenging subject of past material. In my case it's Angular JS. I want to create an app that will have a few tasks that can be addressed using Angular JS:
+This is a personal project for Epicodus. The goal for this week is to discover and improve understanding of a challenging subject of past material. In my case it's Angular JS. I want to create an app that will allow me to create a diary of me falling in love with Angular JS:
 
-1. Build a navigation menu (practice routing) : Home, Vocabulary, Resources
-2. Display a list of terms for Angular JS vocabulary (use Firebase to store, add and save data)
-2. Build a form to add Angular JS vocabulary (include name, description)
-3. Add buttons to edit and remove items from vocabulary list
+Stage One:
+1. Build a navigation menu (practice routing): Home, Diary, Resources
+2. Display a list of diary entries for Angular JS (use Firebase to store, add and save data)
+3. Build a form to add diary entries
+4. Add buttons to edit and remove diary entry
+
+Stage Two:
+5. Build a form to add Resources
+6. Add buttons to edit and remove resources
+
 
 Resources:
 https://tutorialzine.com/2013/08/learn-angularjs-5-examples
