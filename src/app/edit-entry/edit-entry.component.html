@@ -1,0 +1,17 @@
+
+<h4>Edit Entry</h4>
+
+<label>Edit Title:</label>
+<input [(ngModel)]="selectedEntry.title">
+<br>
+
+<label>Edit Date:</label>
+<input [(ngModel)]="selectedEntry.date">
+<br>
+
+<label>Edit Description:</label>
+<input [(ngModel)]="selectedEntry.description">
+
+<button (click)="beginUpdatingEntry(selectedEntry)">Update</button>
+<hr>
+<button (click)="beginDeletingEntry(selectedEntry)">Delete</button>

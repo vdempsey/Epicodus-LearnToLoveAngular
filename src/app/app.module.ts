@@ -5,25 +5,40 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { routing } from './app.routing';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { VocabularyComponent } from './vocabulary/vocabulary.component';
-import { EditVocabularyComponent } from './edit-vocabulary/edit-vocabulary.component';
-import { VocabularyDetailComponent } from './vocabulary-detail/vocabulary-detail.component';
 import { ResourcesComponent } from './resources/resources.component';
+import { EntriesComponent } from './entries/entries.component';
+import { EditEntryComponent } from './edit-entry/edit-entry.component';
+import { EntryDetailComponent } from './entry-detail/entry-detail.component';
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { MeComponent } from './me/me.component';
+
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
-    VocabularyComponent,
-    EditVocabularyComponent,
-    VocabularyDetailComponent,
-    ResourcesComponent
+    EntriesComponent,
+    ResourcesComponent,
+    EntriesComponent,
+    EditEntryComponent,
+    EntryDetailComponent,
+    MeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

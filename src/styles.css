@@ -18,6 +18,11 @@ body {
   color: #404040;
 }
 
+p {
+  font-size: 16px;
+  line-height: 25px;
+}
+
 .header {
   width: 100%;
   /* background-color: grey; */
@@ -40,7 +45,7 @@ ul.navigation {
 
 .navigation li, .navigation li a {
   color: white;
-  background-color: #404040;
+  background-color: #0574af;
   margin: 10px;
   text-decoration: none;
   padding: 15px;
@@ -65,4 +70,11 @@ ul.navigation {
 
 .footer {
   height: 80px;
+}
+
+.time {
+  color: #fff;
+  background-color: #b1c6c6;
+  /* width: 300px; */
+  padding: 10px;
 }

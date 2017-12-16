@@ -8,17 +8,40 @@ This is a personal project for Epicodus. The goal for this week is to discover a
 Stage One:
 1. Build a navigation menu (practice routing): Home, Diary, Resources
 2. Display a list of diary entries for Angular JS (use Firebase to store, add and save data)
-3. Build a form to add diary entries
-4. Add buttons to edit and remove diary entry
-
-Stage Two:
-5. Build a form to add Resources
-6. Add buttons to edit and remove resources
+3. Build a form to add diary entries (when clicked on My Log In tab)
+4. Add buttons to edit and remove diary entry (when clicked on My Log In tab)
 
 
 Resources:
+https://www.learnhowtoprogram.com/javascript/angular-extended
 https://tutorialzine.com/2013/08/learn-angularjs-5-examples
 
+## Directions to obtain Firebase credentials
+1. make a free account at Firebase's website (https://firebase.google.com/)
+2. Create a New Project in a user dashboard area. Provide a name for your new project, and select your Country/region from the drop-down menu.
+3. Select Add Firebase to your web app in an Overview area.
+4.  Create a new file called api-keys.ts in the src/app directory.
+5. Place your Firebase credentials (the information Firebase provided in that modal window), like this:
+
+export var masterFirebaseConfig = {
+    apiKey: "xxxx",
+    authDomain: "xxxx.firebaseapp.com",
+    databaseURL: "https://xxxx.firebaseio.com",
+    storageBucket: "xxxx.appspot.com",
+    messagingSenderId: "xxxx"
+  };
+
+6. Visit Firebase Console once more, and select project's name from the list.
+7. visit the Database area by selecting the Database option from the navbar on the left-hand side.
+8. Find a navbar reading Realtime Database. Select the option that reads RULES.
+9. Change both the ".read", and ".write" properties here to "true", as seen below, then click Publish:
+
+{
+  "rules": {
+    ".read": "true",
+    ".write": "true"
+  }
+}
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.

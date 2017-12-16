@@ -1,0 +1,12 @@
+<h2>Diary Entries</h2>
+<div *ngFor="let entry of entries | async">
+  <div class="entry-wrap">
+    <h1 (click)="goToDetailPage(entry)">{{entry.title}}</h1>
+    <div><p class="time">{{entry.date}}</p>
+      <p>{{entry.description}}</p>
+      <hr>
+      <div *ngIf="currentRoute === '/me'">
+      <app-edit-entry [selectedEntry]="entry"></app-edit-entry>
+    </div>
+  </div>
+</div>

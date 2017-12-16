@@ -1,10 +1,11 @@
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { VocabularyComponent } from './vocabulary/vocabulary.component';
-import { VocabularyDetailComponent } from './vocabulary-detail/vocabulary-detail.component';
-import { EditVocabularyComponent } from './edit-vocabulary/edit-vocabulary.component';
+import { EntriesComponent } from './entries/entries.component';
+import { EntryDetailComponent } from './entry-detail/entry-detail.component';
+import { EditEntryComponent } from './edit-entry/edit-entry.component';
 import { ResourcesComponent } from './resources/resources.component';
+import { MeComponent } from './me/me.component';
 
 const appRoutes: Routes = [
   {
@@ -12,18 +13,22 @@ const appRoutes: Routes = [
     component: WelcomeComponent
   },
   {
-    path: 'vocabulary',
-    component: VocabularyComponent
+    path: 'entries',
+    component: EntriesComponent
   },
   {
-    path: 'terms/:id',
-    component: VocabularyDetailComponent
+    path: 'entry/:id',
+    component: EntryDetailComponent
   },
   // this will work after creating variable terms in terms.service.ts
   {
     path: 'resources',
     component: ResourcesComponent
   },
+  {
+    path: 'me',
+    component: MeComponent
+  }
 
 ];
 

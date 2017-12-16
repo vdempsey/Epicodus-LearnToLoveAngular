@@ -1,0 +1,38 @@
+<div class="new-entry-wrap">
+
+  <h3 class="panel-title">Add New Diary Entry</h3>
+
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Title:</label>
+        <br>
+        <input #newTitle>
+      </div>
+
+      <div>
+        <label>Date:</label>
+        <br>
+        <input #newDate>
+      </div>
+
+      <div>
+        <label>Description:</label>
+        <br>
+        <textarea #newDescription></textarea>
+      </div>
+      <button (click)="submitForm(newTitle.value, newDate.value, newDescription.value); newTitle.value=''; newDate.value=''; newDescription.value=''">Add</button>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div *ngFor="let entry of entries | async">
+    <div class="entry-wrap">
+      <h1 (click)="goToDetailPage(entry)">{{entry.title}}</h1>
+        <app-edit-entry [selectedEntry]="entry"></app-edit-entry>
+    </div>
+  </div>
+  <app-entries></app-entries>
+
+</div>
